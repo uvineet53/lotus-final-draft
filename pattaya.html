@@ -33,46 +33,7 @@
   color: #efba6c;
 }
 
-      .slider-container {
-  position: relative;
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-.slider {
-  display: flex;
-  width: 100%;
-  overflow-x: hidden;
-}
-.slider img {
-  flex: 0 0 100%;
-  height: auto;
-}
-.prev-arrow, .next-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 40px;
-  cursor: pointer;
-}
-.prev-arrow {
-  left: 0;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-.next-arrow {
-  right: 0;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-
+  
     </style>
   </head>
 
@@ -186,22 +147,31 @@
           </div>
           <div class="col-md-6">
             <div class="slider">
-              <div class="slider-images">
-                <img src="images/pattaya/">
-                <img src="images/pattaya//2.png">
-                <img src="images/pattaya//3.png">
-                <img src="images/pattaya//4.png">
-                <img src="images/pattaya//5.png">
-                <img src="images/pattaya//6.png">
+              <div class="slider-container">
+                <div class="slider-item">
+                  <img src="images/pattaya/1.png" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                  <img src="images/pattaya/2.png" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                  <img src="images/pattaya/3.png" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                  <img src="images/pattaya/4.png" alt="Image 1">
+                </div>
+                <div class="slider-item">
+                  <img src="images/pattaya/5.png" alt="Image 1">
+                </div>
+
+
               </div>
               <div class="slider-controls">
-                <div class="slider-control active"></div>
-                <div class="slider-control"></div>
-                <div class="slider-control"></div>
+                <button class="slider-prev">Previous</button>
+                <button class="slider-next">Next</button>
               </div>
             </div>
-
-      </div>
+        </div>
     </div>
 
 
